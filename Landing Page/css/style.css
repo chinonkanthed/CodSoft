@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    /* background: linear-gradient(180deg #11271c #71e187); */
+    background-color: #090c18;
+}
+
+:is(section){
+    border: none;
+    border-radius: 25px;
+    width: 90%;
+    height: 650px;
+    box-shadow: 2px 3px 4px white;
+    color: #fff;
+    /* border: 1px solid black; */
+    background-image: url(/img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar :is(h1){
+    font-size: 2.5rem;
+    cursor: default;
+}
+
+.logo{
+    font-size: 3rem;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+nav :is(ul, li){
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+nav :is(ul, li) :hover{
+    cursor: pointer;
+}
+
+.icons :is(i){
+    padding: 3px;
+}
+
+.text-container{
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 36%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36%;
+    height: 52%;
+    padding: 10px;
+}
+
+.text-container :is(h1){
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text-container :is(p){
+    font-size: 1.4rem;
+}
+
+.container :is(button){
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container :is(.buy-now){
+    background: #fff;
+    color: #000;
+    text-align: center;
+    width: 88px;
+}
+
+.container :is(.play){
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    width: 88px;
+    border: 2px solid #fff;
+}
+
+.container :is(.buy-now, .play):hover{
+    transition: all ease 1s;
+    scale: 1.1;
+    cursor: pointer;
+}
