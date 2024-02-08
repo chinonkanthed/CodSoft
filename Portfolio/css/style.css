@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background: linear-gradient(180deg, lightyellow, lightgreen);
+}
+
 .nav-bar{
     display: flex;
     justify-content: space-around;
